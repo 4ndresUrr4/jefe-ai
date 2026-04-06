@@ -145,18 +145,69 @@ linPEAS.sh or winPEAS.exe
 - [x] Data exfiltration
 - [x] Covering tracks
 
-## Active Directory Attacks
-- [x] Kerberoasting
-- [x] Pass-the-Hash
-- [x] Golden Ticket / Silver Ticket
-- [x] AS-REP Roasting
-- [x] BloodHound analysis
+## Metasploit Framework (Conceptual)
+- [x] msfconsole basics
+- [x] Module types (exploit, auxiliary, payload, encoder, post)
+- [x] Search and select modules
+- [x] auxiliary/scanner modules
+- [x] exploit modules
+- [x] Payload generation with msfvenom
+- [x] Meterpreter sessions
+- [x] post modules
+- [x] Pivoting and tunnel creation
+- [x] Privilege escalation with getsystem
+- [x] Hash dumping and credential reuse
+- [x] Persistence with run persistence
 
-## Wireless Security
-- [x] WiFi reconnaissance
-- [x] WPA/WPA2 cracking
-- [x] Evil Twin attacks
-- [x] WEP breaking
+## Scheduled Scans
+- [x] cron job configuration
+- [x] nuclei templates scheduling
+- [x] nikto auto-run
+- [x] Security report scheduling
+- [x] Alert integration
+- [x] Quarterly audits
+
+## Social Engineering
+- [x] Spear phishing campaigns
+- [x] Credential harvesting
+- [x] Pretexting
+- [x] Baiting and quizz pro
+- [x] USB drop attacks
+- [x] Identity impersonation
+- [x] Vishing / Voice phishing
+
+## CVE & Threat Intelligence
+- [x] CVE database search (cve.mitre.org)
+- [x] NVD (National Vulnerability Database)
+- [x] Exploit-DB integration
+- [x] Rapid7 Vulnerability Database
+- [x] NIST NVD API integration
+- [x] threat情报 feeds
+- [x] Zero-day tracking
+
+## Monitoring & SIEM
+- [x] Log analysis (syslog, Apache, Nginx)
+- [x] IDS/IPS configuration (Snort, Suricata)
+- [x] SIEM basics (ELK Stack, Splunk)
+- [x] Alert thresholds
+- [x] Incident detection
+- [x] Real-time monitoring
+- [x] Security dashboards
+
+## Automated Reporting
+- [x] PDF report generation
+- [x] Executive summary format
+- [x] Technical detail levels
+- [x] Remediation tracking
+- [x] Compliance mapping (OWASP, NIST, ISO 27001)
+- [x] Scheduled reports
+- [x] CVSS scoring
+
+## Cloud Security (Bonus)
+- [x] AWS security best practices
+- [x] IAM auditing
+- [x] S3 bucket misconfigurations
+- [x] CloudTrail analysis
 
 ## Compliance
 - [x] GDPR security requirements
