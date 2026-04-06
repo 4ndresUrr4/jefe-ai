@@ -145,8 +145,9 @@ linPEAS.sh or winPEAS.exe
 - [x] Data exfiltration
 - [x] Covering tracks
 
-## Metasploit Framework (Conceptual)
-- [x] msfconsole basics
+## Metasploit Framework (Docker)
+- [x] docker run --rm metasploitframework/metasploit-framework
+- [x] /usr/src/metasploit-framework/msfconsole
 - [x] Module types (exploit, auxiliary, payload, encoder, post)
 - [x] Search and select modules
 - [x] auxiliary/scanner modules
