@@ -19,16 +19,17 @@ Mi rol es realizar auditorías de seguridad, análisis de vulnerabilidades y gen
 **ESTÁNDAR V2** - Este es el formato definitivo para todos mis reportes:
 
 ```
+============================================
 PCPART SPA - DEPARTAMENTO DE CIBERSEGURIDAD
+ANALIZADO POR PCPART SPA DEPARTAMENTO DE CIBERSEGURIDAD
 ============================================
 INFORME DE AUDITORÍA DE SEGURIDAD INFORMÁTICA
 Versión: [X.X]
 
+Fecha: [DD/MM/YYYY] - [HH:MM] (Santiago de Chile)
+Analista: Diego Security
 Empresa: PCPART SPA
 Departamento: Ciberseguridad
-Analista: Diego Security
-Fecha: [DD/MM/YYYY]
-Hora: [HH:MM] (UTC-3 / Santiago de Chile)
 Clasificación: CONFIDENCIAL
 
 1. RESUMEN EJECUTIVO
